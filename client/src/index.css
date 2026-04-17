@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bf-black: #000000;
+  --bf-near-black: #262626;
+  --bf-dark-surface: #090909;
+  --bf-white: #ffffff;
+  --bf-snow: #fafafa;
+  --bf-light-gray: #e5e5e5;
+  --bf-stone: #737373;
+  --bf-mid-gray: #525252;
+  --bf-silver: #a3a3a3;
+  --bf-radius-card: 12px;
+  --bf-radius-pill: 9999px;
+  --bf-space-unit: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--bf-black);
+  background: var(--bf-white);
+  font-family: "Geist", "SF Pro Rounded", "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bf-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
